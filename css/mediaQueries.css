@@ -1,0 +1,60 @@
+@media screen and (min-width: 1115px) {
+
+  /******************** MAIN ********************/
+  .main {
+    margin: 100px auto 80px;
+    width: auto;
+    grid-template-areas: "daniel daniel jonathan kira"
+                         "jeanette patrick patrick kira";
+  }
+  
+  /********** Cards/General Styles **********/
+  .main__card {
+    height: 267px;
+  }
+  .main__card-content {
+    gap: 13px;
+  }
+  .main__card-content-people-exp p {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .main__card-content-people-opinion p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  /******* Daniel's Card *******/
+  .daniel-card {
+    width: 542px;
+    height: 283px;
+    background-position-x: 350px;
+    grid-column: daniel;
+  }
+  /******* Jonathan's Card *******/
+  .jonathan-card {
+    width: 255px;
+    height: 283px;
+    grid-column: jonathan;
+  }
+  /******* Jeanette's Card *******/
+  .jeanette-card {
+    width: 255px;
+    height: 267px;
+    grid-row: jeanette;
+  }
+  /******* Patrick's Card *******/
+  .patrick-card {
+    width: 542px;
+    height: 267px;
+    grid-row: patrick;
+    grid-column: patrick;
+  }
+  /******* Kira's Card *******/
+  .kira-card {
+    width: 257px;
+    height: 574px;
+    grid-column: kira;
+    grid-row: kira;
+  }
+
+}

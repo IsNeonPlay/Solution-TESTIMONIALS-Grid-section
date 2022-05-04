@@ -1,0 +1,115 @@
+/******************** GENERAL STYLES ********************/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+  /***** General Colors 👇 *****/
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+   /***** Cards Colors 👇 *****/
+    --Daniel-Card-Color: hsl(263, 55%, 52%);
+    --Jonathan-Card-Color: hsl(217, 19%, 35%);
+    --Patrick-Card-Color: hsl(219, 29%, 14%);
+    --Jean-and-Kira-Card-Color: hsl(0, 0%, 100%);
+   /***** Font Family 👇 *****/
+    --Font: 'Barlow Semi Condensed', sans-serif;
+   /***** Border Cards 👇 *****/
+    --Border-cards: .5em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Light-grayish-blue);
+  font-family: var(--Font);
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/******************** MAIN ********************/
+.main {
+  margin: 70px auto;
+  width: 330px;
+  max-width: 1115px;
+  display: grid;
+  gap: 25px;
+}
+/********** Cards/General Styles **********/
+.main__card {
+  padding: 31px 33px;
+  border-radius: var(--Border-cards);
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 20px;
+}
+.main__card-avatar {
+  width: 30px;
+  border-radius: 50%;
+}
+.main__card-people-desc {
+  display: flex;
+  gap: 14px;
+  opacity: .9;
+}
+.main__card-person-desc h3{
+  font-weight: 500;
+  letter-spacing: .2px;
+}
+.main__card-person-desc span {
+  font-size: 13px;
+  opacity: .5;
+}
+.main__card-content {
+  display: grid;
+  gap: 25px;
+}
+.main__card-content-people-exp p {
+  font-size: 20.2px;
+  font-weight: 600;
+}
+.main__card-content-people-opinion p {
+  font-size: 13.9px;
+  line-height: 20px;
+  opacity: .7;
+}
+/******* Daniel's Card *******/
+.daniel-card {
+  background-color: var(--Daniel-Card-Color);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: 202px;
+  color: beige;
+}
+/******* Jonathan's Card *******/
+.jonathan-card {
+  background-color: var(--Jonathan-Card-Color);
+  color: var(--Light-grayish-blue);
+}
+/******* Jeanette's Card *******/
+.jeanette-card {
+  background-color: var(--Jean-and-Kira-Card-Color);
+  color: var(--Jonathan-Card-Color);
+}
+/******* Patrick's Card *******/
+.patrick-card {
+  background-color: var(--Patrick-Card-Color);
+  color: var(--Light-grayish-blue);
+}
+/******* Kira's Card *******/
+.kira-card {
+  background-color: var(--Jean-and-Kira-Card-Color);
+  color: var(--Jonathan-Card-Color);
+}
+
+/******************** FOOTER ********************/
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
